@@ -1,0 +1,161 @@
+@keyframes blinkingDigit {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.main_container {
+  background-color: #dbd5c9;
+  padding: 30px;
+  display: flex;
+}
+.display {
+  width: 500px;
+  height: 320px;
+  background: #e8e8e8;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+}
+.keyboard {
+  margin-left: 30px;
+  background-color: #403a3a;
+}
+
+.keyboard_lines {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.keyboard_btn {
+  width: 70px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.cancel_btn {
+  background-color: white;
+  color: #000;
+  font-size: 15px;
+}
+.clear_btn {
+  background-color: red;
+  color: #000;
+  font-size: 15px;
+}
+
+.check_btn {
+  background-color: green;
+  color: #000;
+  font-size: 15px;
+  width: 90px;
+  height: 50px;
+}
+
+.candidate_card {
+  padding-left: 20px;
+  flex: 1;
+  display: flex;
+}
+
+.candidate_profile_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.candidate_picture_container {
+  width: 160px;
+  height: 0px;
+}
+
+.candidate_image img {
+  width: 100%;
+}
+
+.btn_info {
+  height: 60px;
+  font-size: 15px;
+  border-top: 2px solid #000;
+}
+
+.vote_info {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.candidate_position {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.candidate_number {
+  height: 50px;
+}
+
+.number {
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+}
+
+.blinking_digit {
+  animation-name: blinkingDigit;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.candidate_misc {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+}
+
+.nullWarning {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.endWarning {
+  font-size: 70px;
+  font-weight: bold;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}

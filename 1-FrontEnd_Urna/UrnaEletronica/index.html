@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Urna Eletronica</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="display">
+        <div class="candidate_card">
+          <aside class="candidate_profile_info">
+            <div class="vote_info">
+              <span>Seu voto para</span>
+            </div>
+            <div class="candidate_position">
+              <span>VEREADOR</span>
+            </div>
+            <div class="candidate_number">
+              <div class="number blinking_digit"></div>
+              <div class="number"></div>
+            </div>
+            <div class="candidate_misc">Nome: <br />Paritdo:</div>
+          </aside>
+          <aside class="candidate_picture_container">
+            <div class="candidate_image">
+              <img src="" alt="" />
+            </div>
+          </aside>
+        </div>
+        <div class="btn_info">
+          Aperte a tela:<br />
+          CONFIRMA para CONFIRMAR este voto <br />
+          CORRIGE para REINICIAR este voto<br />
+        </div>
+      </div>
+      <div class="keyboard">
+        <div class="keyboard_lines">
+          <div class="keyboard_btn" onclick="clicked('1')">1</div>
+          <div class="keyboard_btn" onclick="clicked('2')">2</div>
+          <div class="keyboard_btn" onclick="clicked('3')">3</div>
+        </div>
+        <div class="keyboard_lines">
+          <div class="keyboard_btn" onclick="clicked('4')">4</div>
+          <div class="keyboard_btn" onclick="clicked('5')">5</div>
+          <div class="keyboard_btn" onclick="clicked('6')">6</div>
+        </div>
+        <div class="keyboard_lines">
+          <div class="keyboard_btn" onclick="clicked('7')">7</div>
+          <div class="keyboard_btn" onclick="clicked('8')">8</div>
+          <div class="keyboard_btn" onclick="clicked('9')">9</div>
+        </div>
+        <div class="keyboard_lines">
+          <div class="keyboard_btn" onclick="clicked('0')">0</div>
+        </div>
+        <div class="keyboard_lines">
+          <div class="keyboard_btn cancel_btn" onclick="nullVote()">BRANCO</div>
+          <div class="keyboard_btn clear_btn" onclick="clearVote()">
+            CORRIGE
+          </div>
+          <div class="keyboard_btn check_btn" onclick="checkVote()">
+            CONFIRMA
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="candidates.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
